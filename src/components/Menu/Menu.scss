@@ -22,7 +22,7 @@ li {
     line-height: 50px;
 }
 .menu-list a:hover {
-    color: rgba(78,109,67,1);
+    color: $colorGreen;
     text-decoration: none;
 }
 .dropdown {
@@ -40,20 +40,20 @@ li {
     display: block;
 }
 .dropdown-content a:hover {
-    background-color: rgba(78,109,67,1);
+    background-color: $colorGreen;
     color: white;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
 .dropdown:hover .menu-dropdown a {
-    color: rgba(78,109,67,1);
+    color: $colorGreen;
 }
 .dropdown-content a {
     text-align: center;
 }
 .icon-arrow {
-    @include icon ("/assets/icons/icon-arrow-down-black.svg", 20px, 20px, 3px, 17px)
+    @include icon-right ("/assets/icons/icon-arrow-down-black.svg", 20px, 20px, 3px, 17px)
 }
 .dropdown:hover .icon-arrow {
     background-image: url("/assets/icons/icon-arrow-down-green.svg");

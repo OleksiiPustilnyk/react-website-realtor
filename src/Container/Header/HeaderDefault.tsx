@@ -19,7 +19,10 @@ const HeaderDefault = (props: Props) => {
                             <Menu />
                         </Col>
                         <Col>
-                            <button>View properties</button>
+                            <button className="btnDefaultBlack">
+                                View properties
+                                <span className="icon-home"></span>
+                            </button>
                         </Col>
                     </Row>
                 </Container>
