@@ -1,0 +1,21 @@
+@mixin font-roboto ($font-weight, $font-size) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin font-sen ($font-weight,$font-size) {
+    font-family: 'Sen', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin icon ($icon, $height, $width, $right, $top) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+    right:  $right;
+    top: $top;
+}

@@ -1,0 +1,72 @@
+@import "../../assets/style/variables";
+
+.menu {
+    @include font-roboto (400, 18px);
+}
+.menu-list {
+    display: flex;
+    // flex-direction: row;
+}
+li {
+    list-style-type: none;
+}
+.menu-list li {
+    width: 18%;
+}
+.menu-list a {
+    display: block;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+.menu-list a:hover {
+    color: rgba(78,109,67,1);
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 160%;
+    background-color: white;
+}
+.dropdown-content a {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: rgba(78,109,67,1);
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .menu-dropdown a {
+    color: rgba(78,109,67,1);
+}
+.dropdown-content a {
+    text-align: center;
+}
+.icon-arrow {
+    @include icon ("/assets/icons/icon-arrow-down-black.svg", 20px, 20px, 3px, 17px)
+}
+.dropdown:hover .icon-arrow {
+    background-image: url("/assets/icons/icon-arrow-down-green.svg");
+}
+.icon-arrow::after {
+    position: absolute
+}
+// замедление дропдавн
+// .menu-dropdown a:focus ~ .dropdown-content a{
+//     outline: 1px solid #ccc;
+//     // animation-name: down1;
+//     animation-duration: 1s;
+//     animation-timing-function: ease-in;
+//     height: 100px;
+//     overflow: hidden;
+//   }
