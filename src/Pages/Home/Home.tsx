@@ -52,35 +52,38 @@ const Home = (props: Props) => {
                                         <h2 className="black-box-title">
                                             Cozy beach house
                                         </h2>
-                                        <span className="black-box-icon-line"></span>
+                                        <div className="black-box-line">
+                                            <div className="black-box-icon-line"></div>
+                                        </div>
+
                                         <div className="black-box-col">
                                             <Row>
                                                 <Col sm={3}>
-                                                    <h3 className="black-box-title">
+                                                    <h3 className="black-box-col-title">
                                                         Bedrooms
                                                     </h3>
                                                     <div className="black-box-parameters">
                                                         3
+                                                        <span className="black-box-icon-bedroom"></span>
                                                     </div>
-                                                    <span className="black-box-icon"></span>
                                                 </Col>
                                                 <Col sm={3}>
-                                                    <h3 className="black-box-title">
+                                                    <h3 className="black-box-col-title">
                                                         Bathrooms
                                                     </h3>
                                                     <div className="black-box-parameters">
                                                         2
+                                                        <span className="black-box-icon-bathrooms"></span>
                                                     </div>
-                                                    <span className="black-box-icon"></span>
                                                 </Col>
                                                 <Col sm={6}>
-                                                    <h3 className="black-box-title">
+                                                    <h3 className="black-box-col-title">
                                                         Area
                                                     </h3>
                                                     <div className="black-box-parameters">
                                                         2300<sup>2</sup>
+                                                        <span className="black-box-icon-area"></span>
                                                     </div>
-                                                    <span className="black-box-icon"></span>
                                                 </Col>
                                             </Row>
                                         </div>
