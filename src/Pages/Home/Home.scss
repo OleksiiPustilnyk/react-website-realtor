@@ -19,7 +19,7 @@
             @include font-roboto (400, 61px);
          }
           .title-author {
-     
+            @include font-roboto (400, 18px);
          }
     }
      
@@ -38,15 +38,24 @@
         }
         .title2-btn {
             margin-left: -5px;
-            color: rgba(78,109,67,1);
+            color: $colorGreen;
             border: none;
             background-color: $headerBgColor;
+            position: relative;
             @include font-sen (600, 15px);
+            .btn-icon-viewProperties-green {
+                @include icon-right ("/assets/icons/icon-arrow-left-green.svg", 18px, 18px, -23px, 4px)
+            }
         }
+        .title2-btn:hover {
+            color: black;
+            .btn-icon-viewProperties-green {
+                @include icon-right ("/assets/icons/icon-arrow-left-black.svg", 18px, 18px, -23px, 4px)
+            }
+        }
+        
     }
 }
-
-
 
 
 .home-bg {
@@ -102,5 +111,28 @@
         .black-box-icon-area {
             @include icon-right ("/assets/icons/icon-area.svg", 45px, 45px, 60px, 20px)
         }
+    }
+}
+
+.btn-block {
+    left: 105px;
+    top: 116px;
+    
+    .home-bg-btn {
+        @include font-sen (600, 15px);
+        width: 200px;
+        height: 50px;
+        position: relative;
+        background-color: $colorGreen;
+        color: white;
+        border: none;
+        overflow-x: hidden;
+        padding: 16px 40px 16px 18px;
+        .btn-icon-viewProperties-white {
+            @include icon-right ("/assets/icons/icon-arrow-left-white.svg", 18px, 18px, 27px, 19px)
+        }
+    }
+    .home-bg-btn:hover {
+        background-color: black;
     }
 }

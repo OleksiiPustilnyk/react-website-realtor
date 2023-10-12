@@ -36,6 +36,7 @@ const Home = (props: Props) => {
                                 </p>
                                 <button className="title2-btn">
                                     View properties
+                                    <span className="btn-icon-viewProperties-green"></span>
                                 </button>
                             </div>
                         </Col>
@@ -91,6 +92,13 @@ const Home = (props: Props) => {
                                 </div>
                             </Col>
                         </Row>
+
+                        <Col md={{ span: 1, offset: 10 }} className="btn-block">
+                            <button className="home-bg-btn">
+                                View properties
+                                <span className="btn-icon-viewProperties-white"></span>
+                            </button>
+                        </Col>
                     </div>
                 </Container>
             </main>
