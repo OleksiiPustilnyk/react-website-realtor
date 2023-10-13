@@ -1,6 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import HeaderDefault from '../../Container/Header/HeaderDefault'
 import ImageHomeBG1 from '../../assets/images/img-bg-home-1.jpeg'
+import ImageHomeBG2 from '../../assets/images/img-bg-home-2.jpeg'
 
 import './Home.scss'
 
@@ -12,7 +13,7 @@ const Home = (props: Props) => {
             <HeaderDefault />
             <main className="mainHome">
                 <Container fluid="xxl">
-                    <Row xs={1} md={2} className="container-title">
+                    <Row xs={1} md={2} className="container-with-bg">
                         <Col className="title">
                             <div className="title-text">
                                 <h1 className="title-qoute">
@@ -45,7 +46,7 @@ const Home = (props: Props) => {
                         <img src={ImageHomeBG1} alt="" className="img-bg" />
                         <Row>
                             <Col md={7}>
-                                <div className="container-title">
+                                <div className="container-black-box">
                                     <div className="bg-black-box">
                                         <div className="black-box-city">
                                             San Francisco, United States
@@ -94,11 +95,41 @@ const Home = (props: Props) => {
                         </Row>
 
                         <Col md={{ span: 1, offset: 10 }} className="btn-block">
-                            <button className="home-bg-btn">
+                            <button className="btnDefaultGreen">
                                 View properties
-                                <span className="btn-icon-viewProperties-white"></span>
+                                <span className="btn-icon-arrow-left-white"></span>
                             </button>
                         </Col>
+                    </div>
+                    <div className="container-without-bg">
+                        <Row className="justify-content-md-center">
+                            <Col xs lg="5">
+                                <img
+                                    src={ImageHomeBG2}
+                                    alt=""
+                                    className="img-bg"
+                                />
+                            </Col>
+                            <Col xs lg="5" className="white-cont-block">
+                                <h5 className="white-cont-block-title">
+                                    Bibendum morbi ac et porttitor.
+                                </h5>
+                                <h2 className="white-cont-block-heading">
+                                    Morbi lobortis netus ac eget at montes.
+                                </h2>
+                                <p className="white-cont-block-text">
+                                    Ut sed semper velit commodo, tortor
+                                    malesuada. Malesuada nisl pharetra a sit
+                                    augue nec bibendum morbi. Ac et, porttitor
+                                    est elit mauris scelerisque et lobortis
+                                    eget. Orci nunc pellentesque diam.
+                                </p>
+                                <button className="btnDefaultGreen">
+                                    Buy Avada now
+                                    <span className="btn-icon-arrow-left-white"></span>
+                                </button>
+                            </Col>
+                        </Row>
                     </div>
                 </Container>
             </main>

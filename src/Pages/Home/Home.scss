@@ -4,19 +4,20 @@
     box-sizing: border-box;
 }
 
-.mainHome {
-    background-color: $headerBgColor;
-}
+// .mainHome {
+//     background-color: $headerBgColor;
+// }
 
-.container-title {
-    padding: 55px 150px;
+.container-with-bg {
+    padding: 55px 150px 100px;
+    background-color: $headerBgColor;
 }
 
 .title {
     .title-text {
         padding: 0px 35px;
         .title-qoute {
-            @include font-roboto (400, 61px);
+            @include font-sen (400, 61px);
          }
           .title-author {
             @include font-roboto (400, 18px);
@@ -59,8 +60,8 @@
 
 
 .home-bg {
-    margin-top: 100px;
-    margin-bottom: 25px;
+    // margin-top: 100px;
+    margin-bottom: 116px;
     // width: auto;
     // height: auto;
     // display: flex;
@@ -74,7 +75,9 @@
     height: auto;
     position: absolute;
 }
-
+.container-black-box {
+    padding: 55px 150px;
+}
 .bg-black-box {
     background-color: black;
     color: white;
@@ -117,22 +120,37 @@
 .btn-block {
     left: 105px;
     top: 116px;
-    
-    .home-bg-btn {
-        @include font-sen (600, 15px);
-        width: 200px;
-        height: 50px;
-        position: relative;
-        background-color: $colorGreen;
-        color: white;
-        border: none;
-        overflow-x: hidden;
-        padding: 16px 40px 16px 18px;
-        .btn-icon-viewProperties-white {
-            @include icon-right ("/assets/icons/icon-arrow-left-white.svg", 18px, 18px, 27px, 19px)
-        }
+}
+.btnDefaultGreen {
+    @include btnDefault ( $colorGreen, 16px 40px 16px 18px);
+    width: 200px;
+    .btn-icon-arrow-left-white {
+        @include icon-right ("/assets/icons/icon-arrow-left-white.svg", 18px, 18px, 27px, 19px)
     }
-    .home-bg-btn:hover {
-        background-color: black;
+}
+.btnDefaultGreen:hover {
+    background-color: black;
+}
+
+.container-without-bg {
+    padding: 150px 150px;
+}
+
+.white-cont-block {
+    padding: 140px 0 140px;
+    margin-left: 150px;
+    .white-cont-block-title {
+        margin-bottom: 15px;
+        @include font-sen (600, 21px);
+        color: $colorGreen;
+    }
+    .white-cont-block-heading {
+        @include font-sen (400, 57px);
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .white-cont-block-text {
+        @include font-roboto (400, 18px);
+        margin: 0 0 55px;
     }
 }
