@@ -10,7 +10,7 @@ const HeaderDefault = (props: Props) => {
     return (
         <>
             <header className="headerDefault">
-                <Container className="containerPer" fluid>
+                <Container className="containerPer" fluid="xxl">
                     <Row xs={3}>
                         <Col xs={{ span: 2, offset: 1 }}>
                             <Logo />
@@ -18,7 +18,7 @@ const HeaderDefault = (props: Props) => {
                         <Col md={{ span: 4, offset: 1 }}>
                             <Menu />
                         </Col>
-                        <Col md={{ span: 2, offset: 1 }}>
+                        <Col md={{ span: 3, offset: 1 }}>
                             <button className="btnDefaultBlack">
                                 View properties
                                 <span className="icon-home"></span>
