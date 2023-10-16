@@ -103,11 +103,11 @@ const Home = (props: Props) => {
                     </div>
                     <div className="container-without-bg">
                         <Row className="justify-content-md-center">
-                            <Col xs lg="5">
+                            <Col xs lg="6">
                                 <img
                                     src={ImageHomeBG2}
                                     alt=""
-                                    className="img-bg"
+                                    className="img-with-text"
                                 />
                             </Col>
                             <Col xs lg="5" className="white-cont-block">

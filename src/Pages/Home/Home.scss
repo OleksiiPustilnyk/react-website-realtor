@@ -137,12 +137,17 @@
 }
 
 .container-without-bg {
-    padding: 150px 150px;
+    padding: 150px 50px;
+}
+
+.img-with-text {
+    width: 100%;
+    height: 100%;
 }
 
 .white-cont-block {
-    padding: 140px 0 140px;
-    margin-left: 150px;
+    padding: 170px 0 170px;
+    margin-left: 100px;
     .white-cont-block-title {
         margin-bottom: 15px;
         @include font-sen (600, 21px);
@@ -156,5 +161,6 @@
     .white-cont-block-text {
         @include font-roboto (400, 18px);
         margin: 0 0 55px;
+        line-height: 1.8;
     }
 }
