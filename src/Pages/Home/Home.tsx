@@ -13,8 +13,8 @@ const Home = (props: Props) => {
             <HeaderDefault />
             <main className="mainHome">
                 <Container fluid="xxl">
-                    <Row xs={1} md={2} className="container-with-bg">
-                        <Col className="title">
+                    <Row className="justify-content-md-center container-with-bg">
+                        <Col xs lg="7" className="title">
                             <div className="title-text">
                                 <h1 className="title-qoute">
                                     “Architecture should speak of its time and
@@ -23,7 +23,7 @@ const Home = (props: Props) => {
                                 <p className="title-author">– Frank Gehry</p>
                             </div>
                         </Col>
-                        <Col className="title2">
+                        <Col xs lg="3" className="title2">
                             <div className="title2-text">
                                 <h5 className="title2-heading">
                                     Bibendum morbi ac et porttitor.
@@ -45,7 +45,7 @@ const Home = (props: Props) => {
                     <div className="home-bg">
                         <img src={ImageHomeBG1} alt="" className="img-bg" />
                         <Row>
-                            <Col md={7}>
+                            <Col md={8}>
                                 <div className="container-black-box">
                                     <div className="bg-black-box">
                                         <div className="black-box-city">
@@ -94,7 +94,7 @@ const Home = (props: Props) => {
                             </Col>
                         </Row>
 
-                        <Col md={{ span: 1, offset: 10 }} className="btn-block">
+                        <Col md={{ span: 2, offset: 10 }} className="btn-block">
                             <button className="btnDefaultGreen">
                                 View properties
                                 <span className="btn-icon-arrow-left-white"></span>
