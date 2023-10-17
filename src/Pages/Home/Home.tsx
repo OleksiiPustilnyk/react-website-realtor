@@ -3,6 +3,8 @@ import HeaderDefault from '../../Container/Header/HeaderDefault'
 import ImageHomeBG1 from '../../assets/images/img-bg-home-1.jpeg'
 import ImageHomeBG2 from '../../assets/images/img-bg-home-2.jpeg'
 
+import ImageHomeTextBG1 from '../../assets/images/img-with-text-1.jpeg'
+
 import './Home.scss'
 
 type Props = {}
@@ -105,7 +107,7 @@ const Home = (props: Props) => {
                         <Row className="justify-content-md-center">
                             <Col xs lg="6">
                                 <img
-                                    src={ImageHomeBG2}
+                                    src={ImageHomeTextBG1}
                                     alt=""
                                     className="img-with-text"
                                 />
@@ -130,6 +132,42 @@ const Home = (props: Props) => {
                                 </button>
                             </Col>
                         </Row>
+                    </div>
+
+                    <div className="container-with-bg">
+                        <Row>
+                            <Col md={4}>Available properties</Col>
+                            <Col md={{ span: 4, offset: 4 }}>
+                                <button className="title2-btn">
+                                    View all properties
+                                    <span className="btn-icon-viewProperties-green"></span>
+                                </button>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs={6} md={3}>
+                                xs=6 md=4
+                            </Col>
+                            <Col xs={6} md={3}>
+                                xs=6 md=4
+                            </Col>
+                            <Col xs={6} md={3}>
+                                xs=6 md=4
+                            </Col>
+                        </Row>
+                    </div>
+
+                    <div className="home-bg">
+                        <img src={ImageHomeBG2} alt="" className="img-bg" />
+                        <Col
+                            md={{ span: 2, offset: 10 }}
+                            className="btn-block-2"
+                        >
+                            <button className="btnDefaultGreen">
+                                View properties
+                                <span className="btn-icon-arrow-left-white"></span>
+                            </button>
+                        </Col>
                     </div>
                 </Container>
             </main>

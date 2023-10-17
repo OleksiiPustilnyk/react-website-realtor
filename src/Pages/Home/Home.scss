@@ -39,24 +39,25 @@
             line-height: 1.8;
             padding-bottom: 20px;
         }
-        .title2-btn {
-            margin-left: -5px;
-            color: $colorGreen;
-            border: none;
-            background-color: $headerBgColor;
-            position: relative;
-            @include font-sen (600, 15px);
-            .btn-icon-viewProperties-green {
-                @include icon-right ("/assets/icons/icon-arrow-left-green.svg", 18px, 18px, -23px, 4px)
-            }
-        }
-        .title2-btn:hover {
-            color: black;
-            .btn-icon-viewProperties-green {
-                @include icon-right ("/assets/icons/icon-arrow-left-black.svg", 18px, 18px, -23px, 4px)
-            }
-        }
         
+        
+    }
+}
+.title2-btn {
+    margin-left: -5px;
+    color: $colorGreen;
+    border: none;
+    background-color: $headerBgColor;
+    position: relative;
+    @include font-sen (600, 15px);
+    .btn-icon-viewProperties-green {
+        @include icon-right ("/assets/icons/icon-arrow-left-green.svg", 18px, 18px, -23px, 4px)
+    }
+}
+.title2-btn:hover {
+    color: black;
+    .btn-icon-viewProperties-green {
+        @include icon-right ("/assets/icons/icon-arrow-left-black.svg", 18px, 18px, -23px, 4px)
     }
 }
 
@@ -163,4 +164,13 @@
         margin: 0 0 55px;
         line-height: 1.8;
     }
+}
+
+
+
+
+
+.btn-block-2 {
+    left: 25px;
+    top: 469px;
 }
