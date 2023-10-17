@@ -1,9 +1,11 @@
-import { Col, Container, Row } from 'react-bootstrap'
+import { Card, CardGroup, Col, Container, Row } from 'react-bootstrap'
 import HeaderDefault from '../../Container/Header/HeaderDefault'
 import ImageHomeBG1 from '../../assets/images/img-bg-home-1.jpeg'
 import ImageHomeBG2 from '../../assets/images/img-bg-home-2.jpeg'
 
 import ImageHomeTextBG1 from '../../assets/images/img-with-text-1.jpeg'
+
+import CardList from '../../components/Card/CardList'
 
 import './Home.scss'
 
@@ -144,17 +146,7 @@ const Home = (props: Props) => {
                                 </button>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col xs={6} md={3}>
-                                xs=6 md=4
-                            </Col>
-                            <Col xs={6} md={3}>
-                                xs=6 md=4
-                            </Col>
-                            <Col xs={6} md={3}>
-                                xs=6 md=4
-                            </Col>
-                        </Row>
+                        <CardList />
                     </div>
 
                     <div className="home-bg">
