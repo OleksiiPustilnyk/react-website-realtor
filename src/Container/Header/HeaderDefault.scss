@@ -1,4 +1,24 @@
+@import "../../assets/style/variables";
+
+* {
+    box-sizing: border-box;
+}
+
+.headerDefault {
+    background-color: $headerBgColor;
+}
 .containerPer {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.btnDefaultBlack {
+    @include btnDefault (black, 15px 40px 17px 65px)
+}
+.btnDefaultBlack:hover {
+    background-color: $colorGreen;
+} 
+
+.icon-home {
+    @include icon-left ("/assets/icons/icon-home.svg", 15px, 15px, 40px, 18px)
 }

@@ -1,0 +1,46 @@
+@mixin font-roboto ($font-weight, $font-size) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin font-sen ($font-weight,$font-size) {
+    font-family: 'Sen', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin icon-right ($icon, $height, $width, $right, $top) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+    right:  $right;
+    top: $top;
+}
+
+@mixin icon-left ($icon, $height, $width, $left, $top) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+    left:  $left;
+    top: $top;
+}
+
+@mixin btnDefault ($bgcolor, $padding) {
+    position: relative;
+    height: 50px;
+    background-color: $bgcolor;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: $padding;
+    cursor: pointer;
+    @include font-sen(500, 15px)
+}
+
+$headerBgColor: rgba(245,249,244,1);
+$colorGreen: rgba(78,109,67,1)
