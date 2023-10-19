@@ -11,7 +11,7 @@ li {
     list-style-type: none;
 }
 .menu-list li {
-    width: 18%;
+    width: 20%;
 }
 .menu-list a {
     display: block;
@@ -33,7 +33,7 @@ li {
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 160%;
+    width: 180%;
     background-color: white;
 }
 .dropdown-content a {
@@ -53,7 +53,7 @@ li {
     text-align: center;
 }
 .icon-arrow {
-    @include icon-right ("/assets/icons/icon-arrow-down-black.svg", 20px, 20px, 3px, 17px)
+    @include icon-right ("/assets/icons/icon-arrow-down-black.svg", 20px, 20px, -5px, 17px)
 }
 .dropdown:hover .icon-arrow {
     background-image: url("/assets/icons/icon-arrow-down-green.svg");
