@@ -111,7 +111,7 @@ const Home = (props: Props) => {
                             md={{ span: 2, offset: 10 }}
                             className="btn-block-2"
                         >
-                            <button className="btnDefaultGreen">
+                            <button className="btnDefaultBlack">
                                 View properties
                                 <span className="btn-icon-arrow-left-white"></span>
                             </button>

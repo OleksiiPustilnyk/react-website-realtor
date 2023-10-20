@@ -19,7 +19,7 @@ const HeaderDefault = (props: Props) => {
                             <Menu />
                         </Col>
                         <Col md={{ span: 3, offset: 1 }}>
-                            <button className="btnDefaultBlack">
+                            <button className="btnDefaultBlackHead">
                                 View properties
                                 <span className="icon-home"></span>
                             </button>

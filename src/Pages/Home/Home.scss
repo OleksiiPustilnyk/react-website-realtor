@@ -139,5 +139,22 @@
 
 .btn-block-2 {
     left: 25px;
-    top: 469px;
+    top: 468px;
+}
+
+.btnDefaultBlack {
+    @include btnDefault(black, 16px 40px 16px 30px);
+    width: 200px;
+    .btn-icon-arrow-left-white {
+        @include icon-right(
+            '/assets/icons/icon-arrow-left-white.svg',
+            18px,
+            18px,
+            27px,
+            19px
+        );
+    }
+}
+.btnDefaultBlack:hover {
+    background-color: $colorGreen;
 }
