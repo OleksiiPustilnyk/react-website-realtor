@@ -19,30 +19,32 @@ const Home = (props: Props) => {
             <main className="mainHome">
                 <Container fluid="xxl">
                     <Row className="justify-content-md-center container-with-bg">
-                        <Col xs lg="7" className="title">
-                            <div className="title-text">
-                                <h1 className="title-qoute">
+                        <Col xs lg="7" className="fusion-heading-left">
+                            <div className="fusion-heading-left-text">
+                                <h1 className="fusion-heading-left-qoute">
                                     “Architecture should speak of its time and
                                     place, but yearn for timelessness.”
                                 </h1>
-                                <p className="title-author">– Frank Gehry</p>
+                                <p className="fusion-heading-left-author">
+                                    – Frank Gehry
+                                </p>
                             </div>
                         </Col>
-                        <Col xs lg="3" className="title2">
-                            <div className="title2-text">
-                                <h5 className="title2-heading">
+                        <Col xs lg="3" className="fusion-heading-right">
+                            <div className="fusion-heading-right-text">
+                                <h5 className="fusion-heading-right-heading">
                                     Bibendum morbi ac et porttitor.
                                 </h5>
-                                <p className="title2-paragraph">
+                                <p className="fusion-heading-right-paragraph">
                                     Ut sed semper velit commodo, tortor
                                     malesuada. Malesuada nisl pharetra a sit
                                     augue nec bibendum morbi. Ac et, porttitor
                                     est elit mauris scelerisque et lobortis
                                     eget.
                                 </p>
-                                <button className="title2-btn">
+                                <button className="btn-viewProperties-withoutBorder-green">
                                     View properties
-                                    <span className="btn-icon-viewProperties-green"></span>
+                                    <span className="icon-btn-viewProperties-green"></span>
                                 </button>
                             </div>
                         </Col>
@@ -93,12 +95,14 @@ const Home = (props: Props) => {
                     </div>
 
                     <div className="container-with-bg">
-                        <Row>
-                            <Col md={4}>Available properties</Col>
-                            <Col md={{ span: 4, offset: 4 }}>
-                                <button className="title2-btn">
+                        <Row className="title-and-btn">
+                            <Col sm={10} className="titleMain">
+                                Available properties
+                            </Col>
+                            <Col sm={2}>
+                                <button className="btn-viewProperties-withoutBorder-green">
                                     View all properties
-                                    <span className="btn-icon-viewProperties-green"></span>
+                                    <span className="icon-btn-viewProperties-green"></span>
                                 </button>
                             </Col>
                         </Row>
@@ -111,7 +115,7 @@ const Home = (props: Props) => {
                             md={{ span: 2, offset: 10 }}
                             className="btn-block-2"
                         >
-                            <button className="btnDefaultBlack">
+                            <button className="btnDefaultGreen">
                                 View properties
                                 <span className="btn-icon-arrow-left-white"></span>
                             </button>

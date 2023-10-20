@@ -13,41 +13,41 @@
     background-color: $headerBgColor;
 }
 
-.title {
-    .title-text {
+.fusion-heading-left {
+    .fusion-heading-left-text {
         padding: 0px 35px;
-        .title-qoute {
+        .fusion-heading-left-qoute {
             @include font-sen(400, 61px);
         }
-        .title-author {
+        .fusion-heading-left-author {
             margin-top: 20px;
             @include font-roboto(400, 18px);
         }
     }
 }
-.title2 {
-    .title2-text {
+.fusion-heading-right {
+    .fusion-heading-right-text {
         // padding: 0px 205px;
 
-        .title2-heading {
+        .fusion-heading-right-heading {
             @include font-sen(600, 19px);
             padding-bottom: 10px;
         }
-        .title2-paragraph {
+        .fusion-heading-right-paragraph {
             @include font-roboto(400, 18px);
             line-height: 1.8;
             padding-bottom: 20px;
         }
     }
 }
-.title2-btn {
+.btn-viewProperties-withoutBorder-green {
     margin-left: -5px;
     color: $colorGreen;
     border: none;
     background-color: $headerBgColor;
     position: relative;
     @include font-sen(600, 15px);
-    .btn-icon-viewProperties-green {
+    .icon-btn-viewProperties-green {
         @include icon-right(
             '/assets/icons/icon-arrow-left-green.svg',
             18px,
@@ -57,9 +57,9 @@
         );
     }
 }
-.title2-btn:hover {
+.btn-viewProperties-withoutBorder-green:hover {
     color: black;
-    .btn-icon-viewProperties-green {
+    .icon-btn-viewProperties-green {
         @include icon-right(
             '/assets/icons/icon-arrow-left-black.svg',
             18px,
@@ -135,6 +135,13 @@
         margin: 0 0 55px;
         line-height: 1.8;
     }
+}
+
+.title-and-btn {
+    margin: 0 75px;
+}
+.titleMain {
+    @include font-sen(400, 34px);
 }
 
 .btn-block-2 {
