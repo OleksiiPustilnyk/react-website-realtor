@@ -5,6 +5,7 @@ import ImageHomeBG2 from '../../assets/images/img-bg-home-2.jpeg'
 
 import ImageHomeTextBG1 from '../../assets/images/img-with-text-1.jpeg'
 
+import BlackBox from '../../components/BlackBox/BlackBox'
 import CardList from '../../components/Card/CardList'
 
 import './Home.scss'
@@ -50,54 +51,9 @@ const Home = (props: Props) => {
                         <img src={ImageHomeBG1} alt="" className="img-bg" />
                         <Row>
                             <Col md={8}>
-                                <div className="container-black-box">
-                                    <div className="bg-black-box">
-                                        <div className="black-box-city">
-                                            San Francisco, United States
-                                        </div>
-                                        <h2 className="black-box-title">
-                                            Cozy beach house
-                                        </h2>
-                                        <div className="black-box-line">
-                                            <div className="black-box-icon-line"></div>
-                                        </div>
-
-                                        <div className="black-box-col">
-                                            <Row>
-                                                <Col sm={3}>
-                                                    <h3 className="black-box-col-title">
-                                                        Bedrooms
-                                                    </h3>
-                                                    <div className="black-box-parameters">
-                                                        3
-                                                        <span className="black-box-icon-bedroom"></span>
-                                                    </div>
-                                                </Col>
-                                                <Col sm={3}>
-                                                    <h3 className="black-box-col-title">
-                                                        Bathrooms
-                                                    </h3>
-                                                    <div className="black-box-parameters">
-                                                        2
-                                                        <span className="black-box-icon-bathrooms"></span>
-                                                    </div>
-                                                </Col>
-                                                <Col sm={6}>
-                                                    <h3 className="black-box-col-title">
-                                                        Area
-                                                    </h3>
-                                                    <div className="black-box-parameters">
-                                                        2300<sup>2</sup>
-                                                        <span className="black-box-icon-area"></span>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </div>
-                                </div>
+                                <BlackBox />
                             </Col>
                         </Row>
-
                         <Col md={{ span: 2, offset: 10 }} className="btn-block">
                             <button className="btnDefaultGreen">
                                 View properties
