@@ -1,0 +1,40 @@
+@import '../../assets/style/variables';
+
+.img-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-play {
+        @include icon-center('/assets/icons/icon-play.svg', 72px, 72px);
+    }
+}
+
+.card-desc {
+    @include font-sen(400, 20px);
+}
+
+.card-title-custome {
+    @include font-sen(700, 37px);
+    position: relative;
+}
+
+.card-desc {
+    @include font-sen(400, 18px);
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.btnDefaultWhite {
+    color: red;
+    @include btnDefault(white, rgba(78, 109, 67, 1), 16px 50px 16px 30px);
+    // width: 200px;
+    .btn-icon-arrow-left-green {
+        @include icon-right(
+            '/assets/icons/icon-arrow-left-green.svg',
+            18px,
+            18px,
+            27px,
+            19px
+        );
+    }
+}

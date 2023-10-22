@@ -83,7 +83,7 @@
     left: 25px;
 }
 .btnDefaultGreen {
-    @include btnDefault($colorGreen, 16px 40px 16px 18px);
+    @include btnDefault($colorGreen, white, 16px 40px 16px 18px);
     width: 200px;
     .btn-icon-arrow-left-white {
         @include icon-right(
@@ -144,7 +144,7 @@
 }
 
 .btnDefaultBlack {
-    @include btnDefault(black, 16px 40px 16px 30px);
+    @include btnDefault(black, white, 16px 40px 16px 30px);
     width: 200px;
     .btn-icon-arrow-left-white {
         @include icon-right(
@@ -161,6 +161,18 @@
 }
 
 .container-with-green-bg {
-    padding: 55px 0px;
+    padding: 150px 50px 0px;
     background-color: $colorGreen;
+}
+
+.green-bg {
+    .green-bg-heading {
+        color: white;
+        @include font-sen(600, 60px);
+    }
+
+    .black-box-line {
+        color: rgba(158, 160, 164, 1);
+        opacity: 60%;
+    }
 }

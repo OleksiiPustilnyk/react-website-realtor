@@ -29,12 +29,19 @@
     left: $left;
     top: $top;
 }
+@mixin icon-center($icon, $height, $width) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+}
 
-@mixin btnDefault($bgcolor, $padding) {
+@mixin btnDefault($bgcolor, $color, $padding) {
     position: relative;
     height: 50px;
     background-color: $bgcolor;
-    color: white;
+    color: $color;
     text-align: center;
     border: none;
     padding: $padding;

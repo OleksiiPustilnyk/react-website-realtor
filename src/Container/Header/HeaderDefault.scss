@@ -9,7 +9,7 @@
 }
 
 .btnDefaultBlackHead {
-    @include btnDefault(black, 15px 40px 17px 65px);
+    @include btnDefault(black, white, 15px 40px 17px 65px);
 }
 .btnDefaultBlackHead:hover {
     background-color: $colorGreen;

@@ -5,6 +5,7 @@ import ImageHomeTextBG1 from '../../assets/images/img-with-text-1.jpeg'
 
 import BlackBox from '../../components/BlackBox/BlackBox'
 import CardList from '../../components/Card/CardList'
+import CardVideoList from '../../components/CardVideo/CardVideoList'
 
 import './Home.scss'
 
@@ -125,17 +126,16 @@ const Home = (props: Props) => {
                                 </button>
                             </Col>
                         </div>
-                        {/* <img src={ImageHomeBG2} alt="" className="img-bg" /> */}
                     </div>
 
                     <div className="container-with-green-bg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolore adipisci reprehenderit tenetur harum
-                            aliquid magnam corporis fuga quam sequi dolorem.
-                            Enim facilis, eligendi odio temporibus hic similique
-                            distinctio veniam nobis.
-                        </p>
+                        <div className="green-bg">
+                            <h2 className="green-bg-heading">Guided tour</h2>
+                            <div className="black-box-line">
+                                <div className="black-box-icon-line"></div>
+                            </div>
+                            <CardVideoList />
+                        </div>
                     </div>
                 </Container>
             </main>
