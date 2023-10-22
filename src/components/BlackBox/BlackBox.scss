@@ -1,15 +1,14 @@
 @import '../../assets/style/variables';
 
 .container-black-box {
-    padding: 55px 150px;
+    padding: 200px 150px;
 }
 
 .bg-black-box {
     background-color: black;
     color: white;
     position: relative;
-    // width: 100%;
-    // height: 100%;
+
     padding: 50px;
     .black-box-city {
         @include font-sen(400, 18px);

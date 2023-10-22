@@ -1,7 +1,5 @@
 import { Card, CardGroup, Col, Container, Row } from 'react-bootstrap'
 import HeaderDefault from '../../Container/Header/HeaderDefault'
-import ImageHomeBG1 from '../../assets/images/img-bg-home-1.jpeg'
-import ImageHomeBG2 from '../../assets/images/img-bg-home-2.jpeg'
 
 import ImageHomeTextBG1 from '../../assets/images/img-with-text-1.jpeg'
 
@@ -49,20 +47,26 @@ const Home = (props: Props) => {
                             </div>
                         </Col>
                     </Row>
-                    <div className="home-bg">
-                        <img src={ImageHomeBG1} alt="" className="img-bg" />
-                        <Row>
-                            <Col md={8}>
-                                <BlackBox />
+
+                    <div className="container-fullscreen">
+                        <div className="home-bg-img">
+                            <Row>
+                                <Col md={8}>
+                                    <BlackBox />
+                                </Col>
+                            </Row>
+                            <Col
+                                md={{ span: 2, offset: 10 }}
+                                className="btn-block"
+                            >
+                                <button className="btnDefaultGreen">
+                                    View properties
+                                    <span className="btn-icon-arrow-left-white"></span>
+                                </button>
                             </Col>
-                        </Row>
-                        <Col md={{ span: 2, offset: 10 }} className="btn-block">
-                            <button className="btnDefaultGreen">
-                                View properties
-                                <span className="btn-icon-arrow-left-white"></span>
-                            </button>
-                        </Col>
+                        </div>
                     </div>
+
                     <div className="container-without-bg">
                         <Row className="justify-content-md-center">
                             <Col xs lg="6">
@@ -95,7 +99,7 @@ const Home = (props: Props) => {
                     </div>
 
                     <div className="container-with-bg">
-                        <Row className="title-and-btn">
+                        <Row style={{ margin: '0 75px' }}>
                             <Col sm={10} className="titleMain">
                                 Available properties
                             </Col>
@@ -110,16 +114,28 @@ const Home = (props: Props) => {
                     </div>
 
                     <div className="home-bg">
-                        <img src={ImageHomeBG2} alt="" className="img-bg" />
-                        <Col
-                            md={{ span: 2, offset: 10 }}
-                            className="btn-block-2"
-                        >
-                            <button className="btnDefaultGreen">
-                                View properties
-                                <span className="btn-icon-arrow-left-white"></span>
-                            </button>
-                        </Col>
+                        <div className="img-bg">
+                            <Col
+                                md={{ span: 2, offset: 10 }}
+                                className="btn-block"
+                            >
+                                <button className="btnDefaultBlack">
+                                    View properties
+                                    <span className="btn-icon-arrow-left-white"></span>
+                                </button>
+                            </Col>
+                        </div>
+                        {/* <img src={ImageHomeBG2} alt="" className="img-bg" /> */}
+                    </div>
+
+                    <div className="container-with-green-bg">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolore adipisci reprehenderit tenetur harum
+                            aliquid magnam corporis fuga quam sequi dolorem.
+                            Enim facilis, eligendi odio temporibus hic similique
+                            distinctio veniam nobis.
+                        </p>
                     </div>
                 </Container>
             </main>
