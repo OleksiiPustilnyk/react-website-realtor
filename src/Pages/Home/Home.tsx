@@ -1,11 +1,11 @@
 import { Card, CardGroup, Col, Container, Row } from 'react-bootstrap'
 import HeaderDefault from '../../Container/Header/HeaderDefault'
-import ImageHomeBG1 from '../../assets/images/img-bg-home-1.jpeg'
-import ImageHomeBG2 from '../../assets/images/img-bg-home-2.jpeg'
 
 import ImageHomeTextBG1 from '../../assets/images/img-with-text-1.jpeg'
 
+import BlackBox from '../../components/BlackBox/BlackBox'
 import CardList from '../../components/Card/CardList'
+import CardVideoList from '../../components/CardVideo/CardVideoList'
 
 import './Home.scss'
 
@@ -18,93 +18,56 @@ const Home = (props: Props) => {
             <main className="mainHome">
                 <Container fluid="xxl">
                     <Row className="justify-content-md-center container-with-bg">
-                        <Col xs lg="7" className="title">
-                            <div className="title-text">
-                                <h1 className="title-qoute">
+                        <Col xs lg="7" className="fusion-heading-left">
+                            <div className="fusion-heading-left-text">
+                                <h1 className="fusion-heading-left-qoute">
                                     “Architecture should speak of its time and
                                     place, but yearn for timelessness.”
                                 </h1>
-                                <p className="title-author">– Frank Gehry</p>
+                                <p className="fusion-heading-left-author">
+                                    – Frank Gehry
+                                </p>
                             </div>
                         </Col>
-                        <Col xs lg="3" className="title2">
-                            <div className="title2-text">
-                                <h5 className="title2-heading">
+                        <Col xs lg="3" className="fusion-heading-right">
+                            <div className="fusion-heading-right-text">
+                                <h5 className="fusion-heading-right-heading">
                                     Bibendum morbi ac et porttitor.
                                 </h5>
-                                <p className="title2-paragraph">
+                                <p className="fusion-heading-right-paragraph">
                                     Ut sed semper velit commodo, tortor
                                     malesuada. Malesuada nisl pharetra a sit
                                     augue nec bibendum morbi. Ac et, porttitor
                                     est elit mauris scelerisque et lobortis
                                     eget.
                                 </p>
-                                <button className="title2-btn">
+                                <button className="btn-viewProperties-withoutBorder-green">
                                     View properties
-                                    <span className="btn-icon-viewProperties-green"></span>
+                                    <span className="icon-btn-viewProperties-green"></span>
                                 </button>
                             </div>
                         </Col>
                     </Row>
-                    <div className="home-bg">
-                        <img src={ImageHomeBG1} alt="" className="img-bg" />
-                        <Row>
-                            <Col md={8}>
-                                <div className="container-black-box">
-                                    <div className="bg-black-box">
-                                        <div className="black-box-city">
-                                            San Francisco, United States
-                                        </div>
-                                        <h2 className="black-box-title">
-                                            Cozy beach house
-                                        </h2>
-                                        <div className="black-box-line">
-                                            <div className="black-box-icon-line"></div>
-                                        </div>
 
-                                        <div className="black-box-col">
-                                            <Row>
-                                                <Col sm={3}>
-                                                    <h3 className="black-box-col-title">
-                                                        Bedrooms
-                                                    </h3>
-                                                    <div className="black-box-parameters">
-                                                        3
-                                                        <span className="black-box-icon-bedroom"></span>
-                                                    </div>
-                                                </Col>
-                                                <Col sm={3}>
-                                                    <h3 className="black-box-col-title">
-                                                        Bathrooms
-                                                    </h3>
-                                                    <div className="black-box-parameters">
-                                                        2
-                                                        <span className="black-box-icon-bathrooms"></span>
-                                                    </div>
-                                                </Col>
-                                                <Col sm={6}>
-                                                    <h3 className="black-box-col-title">
-                                                        Area
-                                                    </h3>
-                                                    <div className="black-box-parameters">
-                                                        2300<sup>2</sup>
-                                                        <span className="black-box-icon-area"></span>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div className="container-fullscreen">
+                        <div className="home-bg-img">
+                            <Row>
+                                <Col md={8}>
+                                    <BlackBox />
+                                </Col>
+                            </Row>
+                            <Col
+                                md={{ span: 2, offset: 10 }}
+                                className="btn-block"
+                            >
+                                <button className="btnDefaultGreen">
+                                    View properties
+                                    <span className="btn-icon-arrow-left-white"></span>
+                                </button>
                             </Col>
-                        </Row>
-
-                        <Col md={{ span: 2, offset: 10 }} className="btn-block">
-                            <button className="btnDefaultGreen">
-                                View properties
-                                <span className="btn-icon-arrow-left-white"></span>
-                            </button>
-                        </Col>
+                        </div>
                     </div>
+
                     <div className="container-without-bg">
                         <Row className="justify-content-md-center">
                             <Col xs lg="6">
@@ -137,12 +100,14 @@ const Home = (props: Props) => {
                     </div>
 
                     <div className="container-with-bg">
-                        <Row>
-                            <Col md={4}>Available properties</Col>
-                            <Col md={{ span: 4, offset: 4 }}>
-                                <button className="title2-btn">
+                        <Row style={{ margin: '0 75px' }}>
+                            <Col sm={10} className="titleMain">
+                                Available properties
+                            </Col>
+                            <Col sm={2}>
+                                <button className="btn-viewProperties-withoutBorder-green">
                                     View all properties
-                                    <span className="btn-icon-viewProperties-green"></span>
+                                    <span className="icon-btn-viewProperties-green"></span>
                                 </button>
                             </Col>
                         </Row>
@@ -150,16 +115,27 @@ const Home = (props: Props) => {
                     </div>
 
                     <div className="home-bg">
-                        <img src={ImageHomeBG2} alt="" className="img-bg" />
-                        <Col
-                            md={{ span: 2, offset: 10 }}
-                            className="btn-block-2"
-                        >
-                            <button className="btnDefaultGreen">
-                                View properties
-                                <span className="btn-icon-arrow-left-white"></span>
-                            </button>
-                        </Col>
+                        <div className="img-bg">
+                            <Col
+                                md={{ span: 2, offset: 10 }}
+                                className="btn-block"
+                            >
+                                <button className="btnDefaultBlack">
+                                    View properties
+                                    <span className="btn-icon-arrow-left-white"></span>
+                                </button>
+                            </Col>
+                        </div>
+                    </div>
+
+                    <div className="container-with-green-bg">
+                        <div className="green-bg">
+                            <h2 className="green-bg-heading">Guided tour</h2>
+                            <div className="black-box-line">
+                                <div className="black-box-icon-line"></div>
+                            </div>
+                            <CardVideoList />
+                        </div>
                     </div>
                 </Container>
             </main>

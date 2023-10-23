@@ -1,46 +1,62 @@
-@mixin font-roboto ($font-weight, $font-size) {
+@mixin font-roboto($font-weight, $font-size) {
     font-family: 'Roboto', sans-serif;
     font-weight: $font-weight;
     font-size: $font-size;
 }
 
-@mixin font-sen ($font-weight,$font-size) {
+@mixin font-sen($font-weight, $font-size) {
     font-family: 'Sen', sans-serif;
     font-weight: $font-weight;
     font-size: $font-size;
 }
 
-@mixin icon-right ($icon, $height, $width, $right, $top) {
+@mixin icon-right($icon, $height, $width, $right, $top) {
     background-image: url($icon);
     position: absolute;
     background-repeat: no-repeat;
     height: $height;
     width: $width;
-    right:  $right;
+    right: $right;
     top: $top;
 }
 
-@mixin icon-left ($icon, $height, $width, $left, $top) {
+@mixin icon-left($icon, $height, $width, $left, $top) {
     background-image: url($icon);
     position: absolute;
     background-repeat: no-repeat;
     height: $height;
     width: $width;
-    left:  $left;
+    left: $left;
     top: $top;
 }
+@mixin icon-center($icon, $height, $width) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+}
 
-@mixin btnDefault ($bgcolor, $padding) {
+@mixin btnDefault($bgcolor, $color, $padding) {
     position: relative;
     height: 50px;
     background-color: $bgcolor;
-    color: white;
+    color: $color;
     text-align: center;
     border: none;
     padding: $padding;
     cursor: pointer;
-    @include font-sen(500, 15px)
+    @include font-sen(500, 15px);
 }
 
-$headerBgColor: rgba(245,249,244,1);
-$colorGreen: rgba(78,109,67,1)
+@mixin icon-line($color) {
+    padding: 40px 0;
+    .black-box-icon-line {
+        width: 75px;
+        height: 4px;
+        background-color: $color;
+    }
+}
+
+$headerBgColor: rgba(245, 249, 244, 1);
+$colorGreen: rgba(78, 109, 67, 1);

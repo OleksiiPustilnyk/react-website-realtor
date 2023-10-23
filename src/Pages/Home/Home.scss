@@ -1,4 +1,4 @@
-@import "../../assets/style/variables";
+@import '../../assets/style/variables';
 
 * {
     box-sizing: border-box;
@@ -13,124 +13,86 @@
     background-color: $headerBgColor;
 }
 
-.title {
-    .title-text {
+.fusion-heading-left {
+    .fusion-heading-left-text {
         padding: 0px 35px;
-        .title-qoute {
-            @include font-sen (400, 61px);
-         }
-          .title-author {
-            margin-top: 20px;
-            @include font-roboto (400, 18px);
-         }
-    }
-     
-}
-.title2 {
-    .title2-text {
-        // padding: 0px 205px;
-
-        .title2-heading {
-            @include font-sen (600, 19px);
-            padding-bottom: 10px
+        .fusion-heading-left-qoute {
+            @include font-sen(400, 61px);
         }
-        .title2-paragraph {
-            @include font-roboto (400, 18px);
+        .fusion-heading-left-author {
+            margin-top: 20px;
+            @include font-roboto(400, 18px);
+        }
+    }
+}
+.fusion-heading-right {
+    .fusion-heading-right-text {
+        .fusion-heading-right-heading {
+            @include font-sen(600, 19px);
+            padding-bottom: 10px;
+        }
+        .fusion-heading-right-paragraph {
+            @include font-roboto(400, 18px);
             line-height: 1.8;
             padding-bottom: 20px;
         }
-        
-        
     }
 }
-.title2-btn {
+.btn-viewProperties-withoutBorder-green {
     margin-left: -5px;
     color: $colorGreen;
     border: none;
     background-color: $headerBgColor;
     position: relative;
-    @include font-sen (600, 15px);
-    .btn-icon-viewProperties-green {
-        @include icon-right ("/assets/icons/icon-arrow-left-green.svg", 18px, 18px, -23px, 4px)
+    @include font-sen(600, 15px);
+    .icon-btn-viewProperties-green {
+        @include icon-right(
+            '/assets/icons/icon-arrow-left-green.svg',
+            18px,
+            18px,
+            -23px,
+            4px
+        );
     }
 }
-.title2-btn:hover {
+.btn-viewProperties-withoutBorder-green:hover {
     color: black;
-    .btn-icon-viewProperties-green {
-        @include icon-right ("/assets/icons/icon-arrow-left-black.svg", 18px, 18px, -23px, 4px)
+    .icon-btn-viewProperties-green {
+        @include icon-right(
+            '/assets/icons/icon-arrow-left-black.svg',
+            18px,
+            18px,
+            -23px,
+            4px
+        );
     }
 }
-
-
-.home-bg {
-    // margin-top: 100px;
-    margin-bottom: 116px;
-    // width: auto;
-    // height: auto;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    width: auto;
-    height: auto;
-}
-.img-bg {
-    width: 100%;
-    height: auto;
-    position: absolute;
-}
-.container-black-box {
-    padding: 55px 150px;
-}
-.bg-black-box {
-    background-color: black;
-    color: white;
-    position: relative;
-    // width: 100%;
-    // height: 100%;
-    padding: 50px;
-    .black-box-city {
-        @include font-sen (400, 18px);
-    }
-    .black-box-title {
-        @include font-sen (600, 58px);
-    }
-    .black-box-line {
-        padding: 40px 0;
-        .black-box-icon-line {
-            width: 75px;
-            height: 4px;
-            background-color: rgba(51,51,51,1);
-        }
-    }
-    .black-box-col {
-        .black-box-col-title {
-            @include font-sen (400, 23px);
-        }
-        .black-box-parameters {
-            @include font-sen (600, 57px);
-            position: relative;
-        }
-        .black-box-icon-bedroom {
-            @include icon-right ("/assets/icons/icon-couch.svg", 45px, 45px, 25px, 20px)
-        }
-        .black-box-icon-bathrooms {
-            @include icon-right ("/assets/icons/icon-bathroom.svg", 45px, 45px, 25px, 16px)
-        }
-        .black-box-icon-area {
-            @include icon-right ("/assets/icons/icon-area.svg", 45px, 45px, 60px, 20px)
-        }
+.container-fullscreen {
+    min-height: 100vh;
+    .home-bg-img {
+        // min-height: 100vh;
+        position: relative;
+        background: url('../../assets/images/img-bg-home-1.jpeg') no-repeat
+            center center;
+        background-size: cover;
     }
 }
 
 .btn-block {
+    position: absolute;
     left: 25px;
-    top: 41.5px;
 }
 .btnDefaultGreen {
-    @include btnDefault ( $colorGreen, 16px 40px 16px 18px);
+    @include btnDefault($colorGreen, white, 16px 40px 16px 18px);
     width: 200px;
     .btn-icon-arrow-left-white {
-        @include icon-right ("/assets/icons/icon-arrow-left-white.svg", 18px, 18px, 27px, 19px)
+        @include icon-right(
+            '/assets/icons/icon-arrow-left-white.svg',
+            18px,
+            18px,
+            27px,
+            19px
+        );
     }
 }
 .btnDefaultGreen:hover {
@@ -151,26 +113,66 @@
     margin-left: 100px;
     .white-cont-block-title {
         margin-bottom: 15px;
-        @include font-sen (600, 21px);
+        @include font-sen(600, 21px);
         color: $colorGreen;
     }
     .white-cont-block-heading {
-        @include font-sen (400, 57px);
+        @include font-sen(400, 57px);
         margin-top: 10px;
         margin-bottom: 20px;
     }
     .white-cont-block-text {
-        @include font-roboto (400, 18px);
+        @include font-roboto(400, 18px);
         margin: 0 0 55px;
         line-height: 1.8;
     }
 }
 
+.titleMain {
+    @include font-sen(400, 34px);
+}
 
+.home-bg {
+    .img-bg {
+        padding-top: 620px;
+        background: url('../../assets/images/img-bg-home-2.jpeg') no-repeat
+            center center;
+        height: auto;
+        position: relative;
+        background-size: cover;
+    }
+}
 
+.btnDefaultBlack {
+    @include btnDefault(black, white, 16px 40px 16px 30px);
+    width: 200px;
+    .btn-icon-arrow-left-white {
+        @include icon-right(
+            '/assets/icons/icon-arrow-left-white.svg',
+            18px,
+            18px,
+            27px,
+            19px
+        );
+    }
+}
+.btnDefaultBlack:hover {
+    background-color: $colorGreen;
+}
 
+.container-with-green-bg {
+    padding: 150px 50px 0px;
+    background-color: $colorGreen;
+}
 
-.btn-block-2 {
-    left: 25px;
-    top: 469px;
+.green-bg {
+    .green-bg-heading {
+        color: white;
+        @include font-sen(600, 60px);
+    }
+
+    .black-box-line {
+        color: rgba(158, 160, 164, 1);
+        opacity: 60%;
+    }
 }

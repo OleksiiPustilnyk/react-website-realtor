@@ -1,5 +1,4 @@
-@import "../../assets/style/variables";
-
+@import '../../assets/style/variables';
 
 .headerDefault {
     background-color: $headerBgColor;
@@ -9,13 +8,13 @@
     padding-bottom: 80px;
 }
 
-.btnDefaultBlack {
-    @include btnDefault (black, 15px 40px 17px 65px)
+.btnDefaultBlackHead {
+    @include btnDefault(black, white, 15px 40px 17px 65px);
 }
-.btnDefaultBlack:hover {
+.btnDefaultBlackHead:hover {
     background-color: $colorGreen;
-} 
+}
 
 .icon-home {
-    @include icon-left ("/assets/icons/icon-home.svg", 15px, 15px, 40px, 18px)
+    @include icon-left('/assets/icons/icon-home.svg', 15px, 15px, 40px, 18px);
 }
