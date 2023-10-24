@@ -176,3 +176,30 @@
         opacity: 60%;
     }
 }
+
+.fusion-heading-left-title {
+    padding: 0px 70px;
+    @include font-sen(400, 42px);
+}
+
+.home-bg-img-2 {
+    // min-height: 100vh;
+    position: relative;
+    background: url('../../assets/images/img-bg-home-3.jpeg') no-repeat center
+        center;
+    background-size: cover;
+}
+
+.ourClients-block {
+    background-color: white;
+    // background-position: center;
+    padding: 90px 60px;
+    position: relative;
+}
+.icon-company-hemisferio {
+    @include icon-center(
+        '/assets/icons/icon-company/icon-company-hemisferio.png',
+        60px,
+        200px
+    );
+}
