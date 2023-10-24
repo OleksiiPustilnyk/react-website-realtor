@@ -1,0 +1,48 @@
+@import '../../assets/style/variables';
+
+.card-city {
+    @include font-sen(400, 20px);
+}
+
+.card-title-custome {
+    @include font-sen(700, 37px);
+    position: relative;
+}
+
+.black-box-line {
+    @include icon-line(rgba(158, 160, 164, 1));
+}
+
+.card-desc {
+    @include font-sen(400, 18px);
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.card-icon-bedroom {
+    @include icon-right(
+        '/assets/icons/icon-bed-black.svg',
+        35px,
+        35px,
+        55px,
+        10px
+    );
+}
+.card-icon-bathrooms {
+    @include icon-right(
+        '/assets/icons/icon-bathroom-black.svg',
+        35px,
+        35px,
+        55px,
+        7px
+    );
+}
+.card-icon-area {
+    @include icon-right(
+        '/assets/icons/icon-area-black.svg',
+        35px,
+        35px,
+        -27px,
+        8px
+    );
+}
