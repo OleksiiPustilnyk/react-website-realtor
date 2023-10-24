@@ -6,6 +6,7 @@ import ImageHomeTextBG2 from '../../assets/images/img-with-text-2.jpeg'
 import ImageHomeBanner1 from '../../assets/images/img-banner-1.jpeg'
 
 import BlackBox from '../../components/BlackBox/BlackBox'
+import BlackBox2 from '../../components/BlackBox2/BlackBox2'
 import CardList from '../../components/Card/CardList'
 import CardVideoList from '../../components/CardVideo/CardVideoList'
 import CardList2 from '../../components/Card2/CardList2'
@@ -191,18 +192,9 @@ const Home = (props: Props) => {
                         <div className="home-bg-img-2">
                             <Row>
                                 <Col md={8}>
-                                    <BlackBox />
+                                    <BlackBox2 />
                                 </Col>
                             </Row>
-                            <Col
-                                md={{ span: 2, offset: 10 }}
-                                className="btn-block"
-                            >
-                                <button className="btnDefaultGreen">
-                                    View properties
-                                    <span className="btn-icon-arrow-left-white"></span>
-                                </button>
-                            </Col>
                         </div>
                     </div>
 
